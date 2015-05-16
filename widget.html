@@ -1,0 +1,131 @@
+<div class="widget" id="widget" style="position: absolute; ">
+<h3>Performance Monitor</h3>
+
+<div id="smartChartdatagridMain">
+    <div id="smartChartdatagrid">
+        <div id="div1" class="innerContainer" data-title="Test 1" style="display: none;">
+            <div class="lblMessage">Your  Test 1 locations compared to national averages.</div>
+                <table class="backgrid">
+                    <thead>
+                        <tr>
+                            <th class="renderable name"></th>
+                            <th class="renderable locationAvg">Your Locations</th>
+                            <th class="renderable nationalAvg"> National Avg.</th>
+                            <th class="renderable variance">Variance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="string-cell renderable">COGS</td>
+                            <td class="renderable positiveAvg alignRight">29.0%</td>
+                            <td class="renderable alignRight">26.8%</td>
+                            <td class="renderable positiveVariance alignRight">2.2%</td>
+                        </tr>
+                        <tr>
+                            <td class="string-cell renderable">Labor Costs</td>
+                            <td class="renderable positiveAvg alignRight">25.6%</td>
+                            <td class="renderable alignRight">23.5%</td>
+                            <td class="renderable positiveVariance alignRight">2.1%</td>
+                        </tr>
+                        <tr>
+                            <td class="string-cell renderable">Utility Costs</td>
+                            <td class="renderable alignRight">4.0%</td>
+                            <td class="renderable alignRight">4.0%</td>
+                            <td class="renderable alignRight">0.0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="div2" class="innerContainer" data-title="Test 2" style="display: block;">
+                <div class="lblMessage">Your Test 2 locations compared to national averages.</div>
+                    <table class="backgrid">
+                        <thead>
+                            <tr>
+                                <th class="renderable name"> </th>
+                                <th class="renderable locationAvg">Your Locations</th>
+                                <th class="renderable nationalAvg">National Avg.</th>
+                                <th class="renderable variance">Variance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="string-cell renderable">COGS</td>
+                                <td class="renderable positiveAvg alignRight">31.8%</td>
+                                <td class="renderable alignRight">31.3%</td>
+                                <td class="renderable positiveVariance alignRight">0.5%</td>
+                            </tr>
+                            <tr>
+                                <td class="string-cell renderable">Labor Costs</td>
+                                <td class="renderable alignRight">27.7%</td>
+                                <td class="renderable alignRight">28.4%</td>
+                                <td class="renderable alignRight">-0.7%</td>
+                            </tr>
+                            <tr>
+                                <td class="string-cell renderable">Utility Costs</td>
+                                <td class="renderable positiveAvg alignRight">4.9%</td>
+                                <td class="renderable alignRight">3.8%</td>
+                                <td class="renderable positiveVariance alignRight">1.1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div id="div3" class="innerContainer" data-title="Test 3" style="display: none;">
+                <div class="lblMessage">Your Test 3 locations compared to national averages.</div>
+                    <table class="backgrid">
+                        <thead>
+                        <tr>
+                            <th class="renderable name"> </th>
+                            <th class="renderable locationAvg">Your Locations</th>
+                            <th class="renderable nationalAvg">National Avg.</th>
+                            <th class="renderable variance">Variance</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="string-cell renderable">COGS</td>
+                                <td class="renderable positiveAvg alignRight">33.6%</td>
+                                <td class="renderable alignRight">33.2%</td>
+                                <td class="renderable positiveVariance alignRight">0.4%</td>
+                            </tr>
+                            <tr>
+                                <td class="string-cell renderable">Labor Costs</td>
+                                <td class="renderable positiveAvg alignRight">28.4%</td>
+                                <td class="renderable alignRight">24.5%</td>
+                                <td class="renderable positiveVariance alignRight">3.9%</td>
+                            </tr>
+                            <tr>
+                                <td class="string-cell renderable">Utility Costs</td>
+                                <td class="renderable alignRight">2.4%</td>
+                                <td class="renderable alignRight">3.3%</td>
+                                <td class="renderable alignRight">-0.9%</td>
+                            </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <div class="clearfix">
+    </div>
+    <div class="nav" id="nav">
+        <span>
+            <a id="back" class="carousel-prev"> Donuts</a>
+        </span>
+        <span>
+            <a id="next" class="carousel-next">Popeyes</a>
+        </span>
+        <div class="clearfix">
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="./bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" href="./widget.css">
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./bootstrap.js"></script>
+
+<script type="text/javascript" src="./containerCarousel.js"></script>
+<script type="text/javascript">
+$(function(){
+    
+    var smWidgetCarousel = new containerCarousel();
+            smWidgetCarousel.init("#smartChartdatagrid", $('#widget'));
+});</script>

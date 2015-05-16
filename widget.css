@@ -1,0 +1,84 @@
+#widget #smartChartdatagrid .backgrid th,
+#franchise-dashboard #smartChartdatagrid .backgrid td {
+    white-space: inherit;
+}
+#widget #smartChartdatagrid .backgrid td {
+    padding: 0px 5px;
+}
+
+#widget #smartChartdatagridMain {
+    padding-bottom: 10px;
+}
+#widget .innerContainer > div[id] {
+    width: 31%;
+    float: left;
+    margin-right: 3%;
+    border: 1px solid #000000;
+    overflow: hidden;
+}
+#widget .nav {
+    position: relative;
+    /*margin-top: 10px;*/
+    margin-bottom: 0px;
+    width: 100%;
+    height: 25px;
+}
+#widget .nav #back {
+    float: left;
+    /*padding-left: 5px;*/
+}
+#widget .nav #next {
+    float: right;
+    /*padding-right: 5px;*/
+}
+#widget .nav .carousel-prev:before {
+    content: "< ";
+}
+#widget .nav .carousel-next:after {
+    content: " >";
+}
+#widget .nav a {
+    color: #3CBBD5;
+    font-family: arial;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#widget .backgrid tr:nth-child(even) {
+    background: #F7F7F7;
+}
+#widget .backgrid .alignRight {
+    text-align: right;
+}
+
+#widget .backgrid th.name {
+    width: 165px;
+}
+#widget .backgrid th.locationAvg {
+    width: 125px;
+}
+#widget .backgrid th.nationalAvg,
+#widget .backgrid th.fsrAvg,
+#widget .backgrid th.qsrAvg {
+    width: 165px;
+}
+#widget .backgrid th.variance {
+    width: 85px;
+}
+
+
+@media only screen and (max-width: 420px) {
+    #widget .smfooterlbl {
+        display: block;
+    }
+    #widget .smartChart-table-footer {
+        display: none;
+    }
+}
+@media only screen and (max-width: 880px) {
+    #widget .backgrid th.nationalAvg {
+        width: 28%;
+    }
+}
